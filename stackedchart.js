@@ -9,8 +9,8 @@
 								 .range([10, 900]);
 
 			var yScale = d3.scale.linear()
-								 .domain([0, 100])
-								 .range([900, 20]);
+								 .domain([0, 65])
+								 .range([900, 10]);
         
 
 			var rScale = d3.scale.linear()
@@ -21,6 +21,12 @@
 var xAxis = d3.svg.axis()
     .scale(xScale)
     .orient("bottom")
+    .ticks(12);
+
+//Define Y axis
+var yAxis = d3.svg.axis()
+    .scale(yScale)
+    .orient("left")
     .ticks(12);
 
 //Define SVG
@@ -36,6 +42,12 @@ svg.append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + (height) + ")")
     .call(xAxis);
+
+//Create Y axis
+svg.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(6," + (-500) + ")")
+    .call(yAxis);
 
 var div = d3.select("body").append("div")	
     .attr("class", "tooltip")				
@@ -86,25 +98,28 @@ d3.csv("data.csv", function(data) {
         //Assigns colors to bubbles based on cause
         .style("fill", function(d){
            if(d.cause == 'fell'){
-              return "#66c2a5";    
+              return "#8c510a";    
            }
            if(d.cause == 'crush'){
-               return "#fc8d62";
+               return "#d8b365";
            }
            if(d.cause == 'air'){
-               return "#8da0cb";
+               return "#f6e8c3";
            }
            if(d.cause == 'zap'){
-               return "#e78ac3";
+               return "#c7eae5";
            }
            if(d.cause == 'vehicle'){
-               return "#a6d854";
+               return "#5ab4ac";
+           }
+           if(d.cause == 'other' || d.cause == 'crime'){
+               return "#01665e";
            }
         })
      
     
      
-        /*adapted from bl.ocks.org/d3noob */
+        /*adapted from bl.ocks.org/d3noob*/
         .on("mouseover", function(d) {	
             div.transition()		//transition time of tooltop
                 .duration(200)		

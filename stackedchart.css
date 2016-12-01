@@ -14,8 +14,7 @@ p{
 }
 
 
-
-.axis text{
+.axis text {
     font: Times;
     font-size: 12px;
     font-weight: bold;
@@ -29,17 +28,31 @@ div.tooltip {
     height: 68px;					
     padding: 2px;				
     font: 12px sans-serif;		
-    background: khaki;	
+    background: lightgray;	
     border: 0px;		
     border-radius: 8px;			
     pointer-events: none;			
 }
 
-.industries {
+.industry_buttons {
     width: 0;
     height: 0;
     top: 0;
     vertical-align: right;
+}
+
+.industry_background {
+    background-color: lightgray;
+    display: inline-block; 
+    width: 150px;
+    vertical-align: top; 
+    border-radius: 5px 5px 5px 5px;
+}
+
+.legend {
+    background-color: lightgray;
+    border-radius: 5px 5px 5px 5px;
+    vertical-align:top;
 }
 
 .scooch {

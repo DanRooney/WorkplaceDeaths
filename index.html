@@ -4,38 +4,67 @@
   <head>
     <!-- Meta Tag -->
     <meta charset="utf-8">
-    <!-- CSS Stylesheet -->
+
     <link rel="stylesheet" type="text/css" href="stackedchart.css">  
     <!-- D3.js Source -->
     <script type= "text/javascript" src="https://d3js.org/d3.v3.min.js"></script> 
   </head>
     
   <body>
-      <!-- Change the title below: REQUIRED-->
-    <h1 style = "text-align:center; color:black"><bold>Workplace Fatalities in 2016</bold></h1><!--title changed here -->
-    <!-- Your D3.js code for making a Bar Graph -->
+    <hgroup style="text-align:center;">
+        <h1><bold>Death in the Workplace</bold></h1>
+        <h5>Fatalities in OSHA approved workplaces week by week from Oct. 2015 to Sept. 2016</h5>
+        <h6>Data provided by the Occupational Safety and Health Administration shows that of the 1,000+ deaths that occur in OSHA-approved workplaces each year, falling and getting crushed are the top two offenders.</h6>
+    </hgroup>
+    
+
     <script type="text/javascript" src="stackedchart.js"></script> 
       
-      <span style="display: inline-block; width: 150px; background: #66c2a5; vertical-align: top; border-radius: 5px 5px 5px 5px;">
+    <svg width="205" height="200" class="legend">
+      <text x="45" y="25" font-family="sans-serif" font-size="20px" fill="black">Cause of Death</text>
+      <text x="45" y="49" font-family="sans-serif" font-size="15px" fill="black">Falling</text>
+      <circle cx="25" cy="45" r="8" fill= "#8c510a"/>
+      <text x="45" y="74" font-family="sans-serif" font-size="15px" fill="black">Crushed/Struck</text>
+      <circle cx="25" cy="70" r="8" fill= "#d8b365"/>
+      <text x="45" y="99" font-family="sans-serif" font-size="15px" fill="black">Asphysciated/Drowned</text>
+      <circle cx="25" cy="95" r="8" fill= "#f6e8c3"/>
+      <text x="45" y="124" font-family="sans-serif" font-size="15px" fill="black">Electrocuted</text>
+      <circle cx="25" cy="120" r="8" fill= "#c7eae5"/>
+      <text x="45" y="149" font-family="sans-serif" font-size="15px" fill="black">Vehicle Related</text>
+      <circle cx="25" cy="145" r="8" fill= "#5ab4ac"/>
+      <text x="45" y="174" font-family="sans-serif" font-size="15px" fill="black">Other</text>
+      <circle cx="25" cy="170" r="8" fill= "#01665e"/>
+    </svg>
+      
+      <span class="industry_background">
         <h3 class="scooch">INDUSTRY</h3>
-        <button style="width: 150px;" class="industries" id="construction" onclick="highlight()">CONSTRUCTION</button>
-        <button style="width: 150px;" class="industries" id="maintenance" onclick="highlight()">MAINTENANCE</button>
-        <button style="width: 150px;" class="industries" id="manufacturing" onclick="highlight()">MANUFACTURING</button>
-        <button style="width: 150px;" class="industries" id="service" onclick="highlight()">SERVICE</button>
-        <button style="width: 150px;" class="industries" id="food_production" onclick="highlight()">FOOD PRODUCTION</button>
-        <button style="width: 150px;" class="industries" id="other" onclick="highlight()">OTHER</button>
+        <button style="width: 150px;" class="industry_buttons" id="construction" onclick="highlight()">CONSTRUCTION</button>
+        <button style="width: 150px;" class="industry_buttons" id="maintenance" onclick="highlight()">MAINTENANCE</button>
+        <button style="width: 150px;" class="industry_buttons" id="manufacturing" onclick="highlight()">MANUFACTURING</button>
+        <button style="width: 150px;" class="industry_buttons" id="service" onclick="highlight()">SERVICE</button>
+        <button style="width: 150px;" class="industry_buttons" id="food_production" onclick="highlight()">FOOD PRODUCTION</button>
+        <button style="width: 150px;" class="industry_buttons" id="other" onclick="highlight()">OTHER</button>
     </span>
       
-      <!-- ADD YOUR NAME. REQUIRED -->
-      <p>Michael Crane</p><!--name added -->
-      <p>Daniel Rooney</p>
+
       
-      <ul> TO DO LIST:
+
+      <p><strong>Created by:</strong> Daniel Rooney and Michael Crane</p>
+      <p>in collaboration with Suresh K Lodha</p>
+      
+      <p><strong>Files submitted:</strong> index.html, stackedchart.js, stackedchart.css, data.csv</p>
+      
+      <p><strong>Data sources:</strong> <a href="https://www.osha.gov/">OSHA</a></p>
+      
+      <p><strong>Other sources:</strong> <a href="http://bl.ocks.org/d3noob/a22c42db65eb00d4e369">d3Noob</a></p>
+
+      
+      <ul> <strong>TO DO LIST:</strong>
           <li>make buttons highlight bubbles based on industry</li>
           <li>add placeholder bubble for the week missing data</li>
           <li>change x-axis ticks from numbers to months</li>
-          <li>make button box look better next to the chart</li>
-          <li>finish adding causes to remove black bubbles</li>
+          <li>sort colors within columns to better show leading causes of death</li>
+          <li>add all this text to columns</li>
       </ul>
       
   </body>
