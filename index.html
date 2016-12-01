@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+    
+  <head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stackedchart.css">  
+    <!-- D3.js Source -->
+    <script type= "text/javascript" src="https://d3js.org/d3.v3.min.js"></script> 
+  </head>
+    
+  <body>
+      <!-- Change the title below: REQUIRED-->
+    <h1 style = "text-align:center; color:black"><bold>Workplace Fatalities in 2016</bold></h1><!--title changed here -->
+    <!-- Your D3.js code for making a Bar Graph -->
+    <script type="text/javascript" src="stackedchart.js"></script> 
+      
+      <span style="display: inline-block; width: 150px; background: #66c2a5; vertical-align: top; border-radius: 5px 5px 5px 5px;">
+        <h3 class="scooch">INDUSTRY</h3>
+        <button style="width: 150px;" class="industries" id="construction" onclick="highlight()">CONSTRUCTION</button>
+        <button style="width: 150px;" class="industries" id="maintenance" onclick="highlight()">MAINTENANCE</button>
+        <button style="width: 150px;" class="industries" id="manufacturing" onclick="highlight()">MANUFACTURING</button>
+        <button style="width: 150px;" class="industries" id="service" onclick="highlight()">SERVICE</button>
+        <button style="width: 150px;" class="industries" id="food_production" onclick="highlight()">FOOD PRODUCTION</button>
+        <button style="width: 150px;" class="industries" id="other" onclick="highlight()">OTHER</button>
+    </span>
+      
+      <!-- ADD YOUR NAME. REQUIRED -->
+      <p>Michael Crane</p><!--name added -->
+      <p>Daniel Rooney</p>
+      
+      <ul> TO DO LIST:
+          <li>make buttons highlight bubbles based on industry</li>
+          <li>add placeholder bubble for the week missing data</li>
+          <li>change x-axis ticks from numbers to months</li>
+          <li>make button box look better next to the chart</li>
+          <li>finish adding causes to remove black bubbles</li>
+      </ul>
+      
+  </body>
+    
+</html>
