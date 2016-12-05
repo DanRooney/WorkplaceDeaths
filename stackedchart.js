@@ -58,6 +58,42 @@ for(i=1;i<=53;++i){
     array[i] = 0;
 }
 
+/**********************************************************************************************/
+/*******************BUTTONS********************************************************************/
+/**********************************************************************************************/
+//Called when CONSTRUCTION button is pressed
+function highlightCON(){
+    
+}
+
+//Called when MAINTENANCE button is pressed
+function highlightMAI(){
+    
+}
+
+//Called when MANUFACTURING button is pressed
+function highlightMAN(){
+    
+}
+
+//Called when SERVICE button is pressed
+function highlightSER(){
+    
+}
+
+//Called when FOOD PRODUCTION button is pressed
+function highlightFOO(){
+    
+}
+
+//Called when OTHER button is pressed
+function highlightOTH(){
+    
+}
+/**********************************************************************************************/
+/**********************************************************************************************/
+/**********************************************************************************************/
+
 d3.csv("data.csv", function(data) {
     data.forEach(function(d) {//input from the csv
         d.week = +d.week;
