@@ -58,42 +58,97 @@ for(i=1;i<=53;++i){
     array[i] = 0;
 }
 
+//draw initial plot
+drawPlot(false,false,false,false,false,false);
+
 /**********************************************************************************************/
 /*******************BUTTONS********************************************************************/
 /**********************************************************************************************/
+/*
+var constr = false;
+var maint = false;
+var manufac = false;
+var serv = false;
+var food = false;
+var other = false;
+*/
+
 //Called when CONSTRUCTION button is pressed
 function highlightCON(){
-    
+    var constr = true;
+    var maint = false;
+    var manufac = false;
+    var serv = false;
+    var food = false;
+    var other = false;
+    d3.selectAll("circle").remove();
+    drawPlot(constr, maint, manufac, serv, food, other);
 }
 
 //Called when MAINTENANCE button is pressed
 function highlightMAI(){
-    
+    var constr = false;
+    var maint = true;
+    var manufac = false;
+    var serv = false;
+    var food = false;
+    var other = false;
+    d3.selectAll("circle").remove();
+    drawPlot(constr, maint, manufac, serv, food, other);
 }
 
 //Called when MANUFACTURING button is pressed
 function highlightMAN(){
-    
+    var constr = false;
+    var maint = false;
+    var manufac = true;
+    var serv = false;
+    var food = false;
+    var other = false;
+    d3.selectAll("circle").remove();
+    drawPlot(constr, maint, manufac, serv, food, other);
 }
 
 //Called when SERVICE button is pressed
 function highlightSER(){
-    
+    var constr = false;
+    var maint = false;
+    var manufac = false;
+    var serv = true;
+    var food = false;
+    var other = false;
+    d3.selectAll("circle").remove();
+    drawPlot(constr, maint, manufac, serv, food, other);drawPlot();
 }
 
 //Called when FOOD PRODUCTION button is pressed
 function highlightFOO(){
-    
+    var constr = false;
+    var maint = false;
+    var manufac = false;
+    var serv = false;
+    var food = true;
+    var other = false;
+    d3.selectAll("circle").remove();
+    drawPlot(constr, maint, manufac, serv, food, other);
 }
 
 //Called when OTHER button is pressed
 function highlightOTH(){
-    
+    var constr = false;
+    var maint = false;
+    var manufac = false;
+    var serv = false;
+    var food = false;
+    var other = true;
+    d3.selectAll("circle").remove();
+    drawPlot(constr, maint, manufac, serv, food, other);
 }
 /**********************************************************************************************/
 /**********************************************************************************************/
 /**********************************************************************************************/
 
+function drawPlot(con, main, man, svc, fp, other){
 d3.csv("data.csv", function(data) {
     data.forEach(function(d) {//input from the csv
         d.week = +d.week;
@@ -152,6 +207,51 @@ d3.csv("data.csv", function(data) {
                return "#01665e";
            }
         })
+        //.style("fill-opacity", 0.1) //use opacity 0.1 for faded
+
+        //change opacity based on button selection
+        
+        .style("opacity", function(d){
+            console.log("made it to opac funct")
+           if(con == true){
+               if(d.industry == 'construction')
+                   return 1;
+               else
+                   return 0.1;
+           }
+           
+           if(main == true){
+               if(d.industry == 'maintenance')
+                   return "1";
+               else
+                   return "0.1";
+           }
+           if(man == true){
+               if(d.industry == 'manufacturing')
+                   return "1";
+               else
+                   return "0.1";
+           }
+           if(svc == true){
+               if(d.industry == 'service')
+                   return "1";
+               else
+                   return "0.1";
+           }
+           if(fp == true){
+               if(d.industry == 'food production')
+                   return "1";
+               else
+                   return "0.1";
+           }
+           if(other == true){
+               if(d.industry == 'other')
+                   return "1";
+               else
+                   return "0.1";
+           }
+              
+        })
      
     
      
@@ -174,3 +274,4 @@ d3.csv("data.csv", function(data) {
         var circles = d3.selectAll("circle")
    
 });
+}
