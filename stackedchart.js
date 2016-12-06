@@ -17,12 +17,28 @@
 								 .domain([0, 100])
 								 .range([2, 5]);
 
+/////////////////////////////////http://bl.ocks.org/mbostock/1849162
+
+var x = d3.time.scale()
+    .domain([new Date(2012, 0, 1), new Date(2012, 11, 31)])
+    .range([0, width]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .ticks(d3.time.months)
+    .tickSize(16, 0)
+    .tickFormat(d3.time.format("%B"));
+//////////////////////////////////////
+
+/*
 //Define X axis
 var xAxis = d3.svg.axis()
     .scale(xScale)
     .orient("bottom")
     .ticks(12);
-
+    //.ticks(d3.time.months);
+*/
 //Define Y axis
 var yAxis = d3.svg.axis()
     .scale(yScale)
@@ -46,8 +62,19 @@ svg.append("g")
 //Create Y axis
 svg.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(6," + (-500) + ")")
+    .attr("transform", "translate(0," + (-500) + ")")
     .call(yAxis);
+
+//y label
+svg.append("g")
+        .attr("class", "y axis")
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("x", -170)
+        .attr("dy", "-3em")
+        .style("text-anchor", "middle")
+        .text("Number of Deaths");
+
 
 var div = d3.select("body").append("div")	
     .attr("class", "tooltip")				
