@@ -31,14 +31,7 @@ var xAxis = d3.svg.axis()
     .tickFormat(d3.time.format("%B"));
 //////////////////////////////////////
 
-/*
-//Define X axis
-var xAxis = d3.svg.axis()
-    .scale(xScale)
-    .orient("bottom")
-    .ticks(12);
-    //.ticks(d3.time.months);
-*/
+
 //Define Y axis
 var yAxis = d3.svg.axis()
     .scale(yScale)
@@ -65,7 +58,7 @@ svg.append("g")
     .attr("transform", "translate(0," + (-500) + ")")
     .call(yAxis);
 
-//y label
+//Y label
 svg.append("g")
         .attr("class", "y axis")
         .append("text")
@@ -91,14 +84,6 @@ drawPlot(false,false,false,false,false,false);
 /**********************************************************************************************/
 /*******************BUTTONS********************************************************************/
 /**********************************************************************************************/
-/*
-var constr = false;
-var maint = false;
-var manufac = false;
-var serv = false;
-var food = false;
-var other = false;
-*/
 
 //Called when CONSTRUCTION button is pressed
 function highlightCON(){
@@ -195,7 +180,7 @@ d3.csv("data.csv", function(data) {
         .data(data)
         .enter()
         .append("circle")
-        .attr("class", function(d) { //not working
+        .attr("class", function(d) { 
            var c = "";
            if(d.cause == "fell"){
              c = "fell"     
@@ -207,10 +192,10 @@ d3.csv("data.csv", function(data) {
         })  
         .attr("r", 7)
         .attr("cx", function(d){
-           return (d.week * 16.8); //need to tweek this 
-        })//x will be week # 
+           return (d.week * 16.8); 
+        })
         .attr("cy", function(d){
-           return (405 - (d.count * 14));
+           return (405 - (d.count * 14)); //stack circles
         })
         
         //Assigns colors to bubbles based on cause
@@ -237,13 +222,10 @@ d3.csv("data.csv", function(data) {
                return "lightgray";
            }
         })
-        .style("stroke", "#000000")
-        //.style("fill-opacity", 0.1) //use opacity 0.1 for faded
+        .style("stroke", "#000000") //adds border around circles
 
         //change opacity based on button selection
-        
         .style("opacity", function(d){
-            console.log("made it to opac funct")
            if(con == true){
                if(d.industry == 'construction')
                    return 1;
@@ -303,6 +285,5 @@ d3.csv("data.csv", function(data) {
     
         var falling = d3.selectAll("fell")
         var circles = d3.selectAll("circle")
-   
-});
+        });
 }

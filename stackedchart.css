@@ -49,6 +49,15 @@ div.tooltip {
     border-radius: 5px 5px 5px 5px;
 }
 
+.footer_background {
+    background-color: lightgray;
+    display: inline-block;
+    width: 1200px;
+    vertical-align: bottom;
+    border-radius: 5px 5px 5px 5px;
+    padding:10px;
+}
+
 .legend {
     background-color: lightgray;
     border-radius: 5px 5px 5px 5px;

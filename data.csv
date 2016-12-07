@@ -57,7 +57,7 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 35,9/1/16,"One Way Concrete, Lubbock, TX 79411",Jesus Manuel Solano,Worker fatally crushed by truck.,construction,vehicle,15
 35,9/1/16,"Valley Construction Company, Bluegrass, Iowa 52726, (US Highway 61)",Willie N. Holley,Worker struck and killed by motor vehicle.,construction,vehicle,14
 35,8/31/16,"LASCO Acoustics and Drywall Inc, Dallas, TX 75261",Craig Rowell,Worker killed in fall down elevator shaft.,construction,fell,10
-35,8/31/16,"Norton Energy Drilling LLC, Plains, TX 79355","Josç___îÅ«_Û™ Sepeda, Alfredo Valez",Two workers struck and killed by falling block on drilling rig.,construction,crush,4
+35,8/31/16,"Norton Energy Drilling LLC, Plains, TX 79355","Josç___”ÅÇ_óª Sepeda, Alfredo Valez",Two workers struck and killed by falling block on drilling rig.,construction,crush,4
 35,8/31/16,"Sutter Home Winery, Inc., St. Helena, CA 94574",Jose Avina,Worker struck and killed by falling barrel racks.,service,crush,3
 35,8/31/16,"Wells Concessions, Tuskahoma, OK 74574",Leo Olson,Worker fatally crushed between equipment and truck.,service,crush,2
 35,8/30/16,"Environmental Remediation Services Inc, Sabine Pass, TX 77655",Ramiro Ayala,Worker dismantling oil rig died after falling into the sea.,maintenance,fell,9
@@ -109,7 +109,7 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 32,8/14/16,"Pacific Maritime Freight, San Diego, CA 92113",Henry Wimbley,Worke onboard a vessel died from smoke inhalation during fire.,service,air,24
 32,8/13/16,"Adam Nichols Outdoor Services Inc, Yulee, FL 32097",Adam Nichols,Worker struck and killed by falling tree.,maintenance,crush,7
 32,8/12/16,"Baker DC LLC, Fort Meade, MD 20755",Roberto Flores,Worker struck and killed by dump truck.,service,vehicle,17
-32,8/12/16,"Goodyear Tire and Rubber, Danville, VA 24541",William Christopher Scheierç‘êë_àç___ç‘êë_àç___,Worker killed after becoming caught in shearing machine.,manufacturing,crush,6
+32,8/12/16,"Goodyear Tire and Rubber, Danville, VA 24541",William Christopher ScheierçÔê‘_ˆç___çÔê‘_ˆç___,Worker killed after becoming caught in shearing machine.,manufacturing,crush,6
 32,8/12/16,"National Convention Services, LLC, Las Vegas, NV 89109",Edward W. Vance,Worker died after falling backward and hitting head.,service,fell,14
 32,8/12/16,"Omega Concrete Systems Inc, Andover, KS 67002",Darrell Harden,Worker electrocuted when lift contacted power lines.,construction,zap,19
 32,8/11/16,"Briggs Traditional Turf Farms Inc, Kansas City, MO 64108",Don Arthur,Worker died from heat stroke while installing sod.,food production,other,21
@@ -121,7 +121,7 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 32,8/10/16,"K&C Communications Services, LLC, Oakland, KY 42159",Raymond Barry,Worker in vehicle struck and killed by train.,service,vehicle,15
 32,8/10/16,"NRG Services Inc, Canton, MA 02021",,Worker killed in fall from ladder.,service,fell,10
 32,8/10/16,"Pike Lumber Company Incorporated, Osgood, IN 47037",Joshua Beam,Worker struck and killed by falling tree.,manufacturing,crush,5
-32,8/10/16,"US Pipe, Lynchburg, VA 24504",Jessie Horsleyç‘êë_àç___ç‘êë_àç___,Worker struck and killed by tub that fell from hoist.,construction,crush,4
+32,8/10/16,"US Pipe, Lynchburg, VA 24504",Jessie HorsleyçÔê‘_ˆç___çÔê‘_ˆç___,Worker struck and killed by tub that fell from hoist.,construction,crush,4
 32,8/9/16,"Bauer Built Homes, Inc., Isle, MN 56342",Michael Bauer,Worker fatally injured while installing trusses on garage.,construction,crush,3
 32,8/9/16,"BJB Architectural Services, Inc., Louisville, KY 40202",Ervin Bledsoe,Worker killed in fall from ladder.,construction,fell,9
 32,8/9/16,"EMB Quality Masonry, LLC, Cordova, TN 38088",James Kemp,Worker killed in fall from height.,construction,fell,8
@@ -201,7 +201,7 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 28,7/15/16,"Bruns Brush Inc, Willoughby, OH 44094",,Worker died from chemical exposure.,manufacturing,other,25
 28,7/15/16,"Crocker Construction, Bastrop, LA 71220",Louis Thomas,Worker killed in excavation collapse.,construction,crush,4
 28,7/15/16,"Don's Landscaping, Inc., Bristol, TN 37620",John Shankle,Worker electrocuted by power line while trimming bushes.,service,zap,22
-28,7/15/16,"Donç___ç___îÅ«ë_Âs Landscaping, Inc., Bristol, TN 37620",John Shankle,Worker electrocuted while trimming bushes near power line.,service,zap,21
+28,7/15/16,"Donç___ç___”ÅÇ‘_ås Landscaping, Inc., Bristol, TN 37620",John Shankle,Worker electrocuted while trimming bushes near power line.,service,zap,21
 28,7/15/16,"Kinder Morgan Bulk Terminals Inc, Fernandina Beach, FL 32034",Timothy Dubberly,Worker killed when crane cab fell 80 feet to the ground.,construction,fell,12
 28,7/15/16,"Kone Elvator & Escalator, Cincinnati, OH 45267",Chris Lane,Worker killed in fall down elevator shaft.,construction,fell,11
 28,7/15/16,"LI Garden & Tree Service Corp, Lindenhurst, NY 11757",Oscar Martinez,Worker trimming tree killed in fall from bucket truck.,service,fell,10
@@ -562,7 +562,7 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 12,3/23/16,"Neil Oil Co Inc, Quincy, IL 62301",Kenneth Pratt,Worker killed in flash fire ignited while transferring diesel fuel from storage tank.,manufacturing,other,22
 12,3/23/16,"R&L Carriers, Wichita, KS 67217",,Worker fatally crushed by forklift.,service,vehicle,14
 12,3/23/16,"Recycling Center, Inc., Richmond, IN 47374",Robert Samples,Worker fatally crushed by scrap metal bailer.,manufacturing,crush,3
-12,3/22/16,"Francis Salyerç___ç___îÅ«ë_Âs Logging, Pound, VA 24279",Francis Salyers,Worker struck and killed by bulldozer.,manufacturing,vehicle,13
+12,3/22/16,"Francis Salyerç___ç___”ÅÇ‘_ås Logging, Pound, VA 24279",Francis Salyers,Worker struck and killed by bulldozer.,manufacturing,vehicle,13
 12,3/22/16,"Hill Crane Service, Long Beach, CA 90807",Michael Troyer,Worker fatally crushed between crane and boom dolly.,construction,crush,2
 12,3/22/16,"Southwest Transport, Benton Harbor, MI 49023",David Strey,Operator fatally crushed by tree.,service,crush,1
 12,3/22/16,"Suburban Waste Services Inc, Ridley Park, PA 19078",,Worker struck and killed by garbage truck.,service,vehicle,12
@@ -807,7 +807,7 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 51,12/19/15,"Sears Operations LLC, Salem, NH 03079",,Worker killed in tire explosion.,service,other,20
 51,12/18/15,"Ed Balis, Friendly, WV 26146",Aaron Flanigan,Worker on oil and gas tank died from exposure to gas vapors.,other,air,22
 51,12/18/15,"Jesus Aguado Rangel, Murfreesboro, TN 37130",Juan Rodriguez,Worker killed in fall from roof.,other,fell,14
-51,12/18/15,"Long Acre Livestock LLC, Buckley, MI 49620",Heather Barley,Seventeen-year-old worker asphyxiated by carbon monoxide from power washer generator.ç‘êë_àç___,other,air,21
+51,12/18/15,"Long Acre Livestock LLC, Buckley, MI 49620",Heather Barley,Seventeen-year-old worker asphyxiated by carbon monoxide from power washer generator.çÔê‘_ˆç___,other,air,21
 51,12/18/15,"Strom Aviation Inc., Marana, AZ 85653",John C. Pinney,Worker killed in fall from ladder.,service,fell,13
 51,12/18/15,"White Hawk Inc., Carterville, GA 30120",Angel Gutierrez,Worker died after being struck by metal panel and falling from roof.,construction,fell,12
 51,12/17/15,"Economy Coatings Systems, Inc., Camanche, IA 52730",Nicholas Garza,Worker fatally crushed between frame and box of dump truck.,service,crush,6
@@ -1020,8 +1020,6 @@ week,date,Employer/Address of Incident,Victim(s),description,industry,cause,coun
 41,10/5/15,"Casaca Vineyards, Five Points, CA 93624",Alfonso Lopez,Worker changing tire fatally crushed when jack slipped.,food production,crush,1
 41,10/5/15,"O.K. Construction, Sioux Falls, SD 57105",Wade Brooks,Worker killed in fall from ladder on scaffold.,construction,fell,4
 41,10/5/15,"Vidal Landscaping, Quogue, NY 11959",,Worker cutting tree branches killed in fall.,service,fell,3
-40,10/4/15,"Black Hawk Roofing Company, Inc., Waterloo, IA 50701",Matthew A. Steele,Worker killed in fall through hole in roof.,construction,fell,1
-40,10/4/15,"Western Sugar Cooperative, Billings, MT 59101",Matthew Boyer,Worker killed after falling into beet dryer.,food production,fell,2
 38,,,,Data missing for this week,,none,1
 38,,,,Data missing for this week,,none,2
 38,,,,Data missing for this week,,none,3
