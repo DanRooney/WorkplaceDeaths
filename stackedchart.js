@@ -233,7 +233,11 @@ d3.csv("data.csv", function(data) {
            if(d.cause == 'other' || d.cause == 'crime'){
                return "#01665e";
            }
+           if(d.cause == 'none'){
+               return "lightgray";
+           }
         })
+        .style("stroke", "#000000")
         //.style("fill-opacity", 0.1) //use opacity 0.1 for faded
 
         //change opacity based on button selection
